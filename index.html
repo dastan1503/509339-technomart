@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+	<link href="css/index.css" type="text/css" rel="stylesheet">
   </head>
   <body>
 		<header>
 			<ul>
 				<li><a href="" class="logo">Техномарт</a></li>
 				<li><a href="" class="search">Поиск</a></li>
-				<li><a href="" class="bookmarks" >Закладки:
-					<span class="bookmarks-sum">0</span></a></li>
-				<li><a href="" class="basket">Корзина:
-					<span class="baskey-sum">0</span></a></li>
+				<li><a href="" class="bookmarks">Закладки:<span class="bookmarks-sum">0</span></a></li>
+				<li><a href="" class="basket">Корзина:<span class="basket-sum">0</span></a></li>
 				<li><a href="" class="order">Оформить заказ</a></li>
 			</ul>
 			
@@ -44,25 +43,30 @@
 		<main>
 			<section class="promo">
 				<h2 class="hidden">Промо-слайдер</h2>
-				<div class="promo-item matterials">
+				<div class="promo-item matherials">
 					<h3>Материалы</h3>
 					<a href="">На любой вкус</a>
+					<img src="img/svg/icon-1.svg">
 				</div>
 				<div class="promo-item instrument">
 					<h3>Инструмент</h3>
 					<a href="">На все случаи</a>
+					<img src="img/svg/icon-2.svg">
 				</div>
 				<div class="promo-item technics">
 					<h3>Техника</h3>
 					<a href="">Для стройки</a>
+					<img src="img/svg/icon-3.svg">
 				</div>
 				<div class="promo-item discount">
 					<h3>Скидки 50%</h3>
 					<a href="">На 350 товаров</a>
+					<img src="img/svg/icon-4.svg">
 				</div>
 				<div class="promo-item delivery">
 					<h3>Доставка</h3>
 					<a href="">Бесплатно</a>
+					<img src="img/svg/icon-5.svg">
 				</div>
 				
 				<div class="promo-slider">
@@ -74,7 +78,13 @@
 						<h3>Перфораторы</h3>
 						<p>Настоящие мужские игрушки</p>
 					</div>
-					<a href="">Открыть каталог</a>
+					<button type="button" class="prev-slide">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
+					</button>
+					<button type="button" class="next-slide">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
+					</button>
+					<a href="catalog.html">Открыть каталог</a>
 				</div>
 			</section>
 			
@@ -84,25 +94,25 @@
 					<a href="">Все популярные товары</a>
 				</div>
 				<article>
-					<img src="" alt="Перфоратор BOSCH BFG 9000">
+					<img src="img/perfor-1.jpg" alt="Перфоратор BOSCH BFG 9000">
 					<h3>Перфоратор BOSCH BFG 9000</h3>
 					<p class="old-price">32500 P.</p>
 					<p class="actual-price">25500 Р.</p>
 				</article>
 				<article>
-					<img src="" alt="Перфоратор BOSCH BFG 3000">
+					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="old-price">22500 P.</p>
 					<p class="actual-price">15500 Р.</p>
 				</article>
 				<article>
-					<img src="" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/perfor-3.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="old-price">30500 P.</p>
 					<p class="actual-price">55500 Р.</p>
 				</article>
 				<article>
-					<img src="" alt="Перфоратор BOSCH BFG 2000">
+					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 2000">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<p class="old-price"></p>
 					<p class="actual-price">12500 Р.</p>
@@ -113,14 +123,14 @@
 				<h2>Популярные производители:</h2>
 				<a href="">Все производители</a>
 				<ul>
-					<li><a href=""><img src="" alt="Bosch"></a></li>
-					<li><a href=""><img src="" alt="Makita"></a></li>
-					<li><a href=""><img src="" alt="DeWALT"></a></li>
-					<li><a href=""><img src="" alt="Интерскол"></a></li>
-					<li><a href=""><img src="" alt="Hitachi"></a></li>
-					<li><a href=""><img src="" alt="LG"></a></li>
-					<li><a href=""><img src="" alt="AEG"></a></li>
-					<li><a href=""><img src="" alt="Metabo"></a></li>
+					<li><a href=""><img src="img/bosch.png" alt="Bosch"></a></li>
+					<li><a href=""><img src="img/makita.png" alt="Makita"></a></li>
+					<li><a href=""><img src="img/DeWALT.png" alt="DeWALT"></a></li>
+					<li><a href=""><img src="img/Интерскол.png" alt="Интерскол"></a></li>
+					<li><a href=""><img src="img/hitachi.png" alt="Hitachi"></a></li>
+					<li><a href=""><img src="img/LG.png" alt="LG"></a></li>
+					<li><a href=""><img src="img/AEG.png" alt="AEG"></a></li>
+					<li><a href=""><img src="img/Metabo.png" alt="Metabo"></a></li>
 				</ul>
 			</section>
 			
@@ -162,9 +172,23 @@
 				<div class="about-us-contact">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<a href="">
-						<img src="" alt="Карта"></a>
-					<a href="">Заблудились? Напишите нам</a>					
+					<button type="button" class="modal-map">
+						<img src="img/map.jpg" alt="Карта">
+					</button>
+					<div class="modal-map">
+						<button type="button">Закрыть карту</button>
+					</div>
+					<button type="button" class="modal-write-us">Заблудились? Напишите нам</button>
+					<div class="modal-write-us">
+						<form method="post" name="write-us">
+							<label>Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста"></label>
+							<label>Ваш E-mail:<input type="e-mail" placeholder="Для отправки ответа"></label>
+							<label>Текст письма:						
+								<textarea>В свободной форме</textarea>
+							</label>
+							<input type="submit" placeholder="Отправить">
+						</form>
+					</div>
 				</div>
 			</section>
 		</main>

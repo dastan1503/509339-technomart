@@ -9,12 +9,8 @@
 			<ul>
 				<li><a href="" class="logo">Техномарт</a></li>
 				<li><a href="" class="search">Поиск</a></li>
-				<li><a href="" class="bookmarks">Закладки
-					<span class="bookmarks-sum">0</span>
-					</a></li>
-				<li><a href="" class="basket">Корзина
-					<span class="basket-sum">10</span>
-					</a></li>
+				<li><a href="" class="bookmarks">Закладки:<span class="bookmarks-sum">0</span></a></li>
+				<li><a href="" class="basket">Корзина:<span class="basket-sum">10</span></a></li>
 				<li><a href="" class="order">Оформить заказ</a></li>
 			</ul>
 			
@@ -57,7 +53,25 @@
 			
 			<section class="filters">
 				<h3>Фильтр:</h3>
-				<form>
+				<form method="post">
+					<h4>Цена:</h4>
+					<label>
+						<input type="range" min="0" max="30000" step="1"> 
+						<p>0 - 30000</p>
+					</label>
+					
+					<h4>Производители:</h4>
+					<label><input type="checkbox">BOSCH</label>
+					<label><input type="checkbox">Интерскол</label>
+					<label><input type="checkbox">Makita</label>
+					<label><input type="checkbox">DeWALT</label>
+					<label><input type="checkbox">Hitachi</label>
+					
+					<h4>Питание:<h4>
+					<label><input type="radio" name="power">Аккумуляторные</label>
+					<label><input type="radio" name="power">Сетевые</label>
+					
+					<button type="submit">Показать</button>
 				</form>
 			</section>
 			
@@ -72,55 +86,55 @@
 				</div>
 				
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 3000">
+					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="old-price">22500 P.</p>
 					<p class="actual-price">15500 Р.</p>
 				</article>
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/perfor-3.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="old-price">30500 P.</p>
 					<p class="actual-price">55500 Р.</p>
 				</article>
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 2000">
+					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 2000">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<p class="old-price"></p>
 					<p class="actual-price">12500 Р.</p>
 				</article>
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 3000">
+					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="old-price">22500 P.</p>
 					<p class="actual-price">15500 Р.</p>
 				</article>
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/perfor-3.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="old-price">30500 P.</p>
 					<p class="actual-price">55500 Р.</p>
 				</article>
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 2000">
+					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 2000">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<p class="old-price"></p>
 					<p class="actual-price">12500 Р.</p>
 				</article>
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 3000">
+					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="old-price">22500 P.</p>
 					<p class="actual-price">15500 Р.</p>
 				</article>
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 6000">
+					<img src="img/perfor-3.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="old-price">30500 P.</p>
 					<p class="actual-price">55500 Р.</p>
 				</article>
 				<article class="products-item">
-					<img src="" alt="Перфоратор BOSCH BFG 2000">
+					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 2000">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<p class="old-price"></p>
 					<p class="actual-price">12500 Р.</p>
@@ -142,7 +156,7 @@
 			
 		<footer>
 			<ul class="footer-nav-site">
-				<li><a href="" class="logo">Техномарт</a></li>
+				<li><a href="index.html" class="logo">Техномарт</a></li>
 				<li><a href="">Компания</a></li>
 				<li><a href="">Новости</a></li>
 				<li><a href="">Каталог</a></li>
