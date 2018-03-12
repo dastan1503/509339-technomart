@@ -55,13 +55,11 @@
 				<h3>Фильтр:</h3>
 				<form method="post" name="filter" action="https://echo.htmlacademy.ru/" oninput="costmaxoutput.value=costmax.value; costminoutput.value=costmin.value">
 					<h4>Цена:</h4>
-					<label>
 						<input type="range" min="0" max="29999" step="1" value="0" name="costmin">
 						<input type="range" min="1" max="30000" step="1" value="30000" name="costmax">
 						<output name="costminoutput">0</output>
 						- 
 						<output name="costmaxoutput">30000</output>
-					</label>
 					
 					<h4>Производители:</h4>
 					<label><input type="checkbox" name="generator" value="BOSCH" checked>BOSCH</label>
@@ -74,7 +72,7 @@
 					<label><input type="radio" name="power" value="power-out" checked>Аккумуляторные</label>
 					<label><input type="radio" name="power" value="power-in">Сетевые</label>
 					
-					<button type="submit" form="filter">Показать</button>
+					<button type="submit">Показать</button>
 				</form>
 			</section>
 			
