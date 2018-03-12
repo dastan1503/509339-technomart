@@ -53,25 +53,28 @@
 			
 			<section class="filters">
 				<h3>Фильтр:</h3>
-				<form method="post">
+				<form method="post" name="filter" action="https://echo.htmlacademy.ru/" oninput="costmaxoutput.value=costmax.value; costminoutput.value=costmin.value">
 					<h4>Цена:</h4>
 					<label>
-						<input type="range" min="0" max="30000" step="1"> 
-						0 - 30000
+						<input type="range" min="0" max="29999" step="1" value="0" name="costmin">
+						<input type="range" min="1" max="30000" step="1" value="30000" name="costmax">
+						<output name="costminoutput">0</output>
+						- 
+						<output name="costmaxoutput">30000</output>
 					</label>
 					
 					<h4>Производители:</h4>
-					<label><input type="checkbox">BOSCH</label>
-					<label><input type="checkbox">Интерскол</label>
-					<label><input type="checkbox">Makita</label>
-					<label><input type="checkbox">DeWALT</label>
-					<label><input type="checkbox">Hitachi</label>
+					<label><input type="checkbox" name="generator" value="BOSCH" checked>BOSCH</label>
+					<label><input type="checkbox" name="generator" value="Интерскол">Интерскол</label>
+					<label><input type="checkbox" name="generator" value="Makita" checked>Makita</label>
+					<label><input type="checkbox" name="generator" value="DeWALT">DeWALT</label>
+					<label><input type="checkbox" name="generator" value="Hitachi">Hitachi</label>
 					
 					<h4>Питание:</h4>
-					<label><input type="radio" name="power">Аккумуляторные</label>
-					<label><input type="radio" name="power">Сетевые</label>
+					<label><input type="radio" name="power" value="power-out" checked>Аккумуляторные</label>
+					<label><input type="radio" name="power" value="power-in">Сетевые</label>
 					
-					<button type="submit">Показать</button>
+					<button type="submit" form="filter">Показать</button>
 				</form>
 			</section>
 			

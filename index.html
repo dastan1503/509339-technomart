@@ -180,11 +180,11 @@
 					</div>
 					<button type="button" class="modal-write-us">Заблудились? Напишите нам</button>
 					<div class="modal-write-us">
-						<form method="post" name="write-us">
-							<label>Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста"></label>
-							<label>Ваш E-mail:<input type="email" placeholder="Для отправки ответа"></label>
+						<form method="post" name="write-us" action="https://echo.htmlacademy.ru/">
+							<label>Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста" name="name" required></label>
+							<label>Ваш E-mail:<input type="email" placeholder="Для отправки ответа" name="e-mail" required></label>
 							<label>Текст письма:						
-								<textarea>В свободной форме</textarea>
+								<textarea required name="description">В свободной форме</textarea>
 							</label>
 							<input type="submit">
 						</form>
