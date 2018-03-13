@@ -9,7 +9,12 @@
 		<header>
 			<ul>
 				<li><a href="" class="logo">Техномарт</a></li>
-				<li><a href="" class="search">Поиск</a></li>
+				<li>
+					<form method="post" action="https://echo.htmlacademy.ru/">
+						<input type="search" name="search">
+						<input type="submit" value="Поиск">
+					</form>
+				</li>
 				<li><a href="" class="bookmarks">Закладки:<span class="bookmarks-sum">0</span></a></li>
 				<li><a href="" class="basket">Корзина:<span class="basket-sum">0</span></a></li>
 				<li><a href="" class="order">Оформить заказ</a></li>
@@ -46,27 +51,22 @@
 				<div class="promo-item matherials">
 					<h3>Материалы</h3>
 					<a href="">На любой вкус</a>
-					<img src="img/svg/icon-1.svg" alt="Банка краски">
 				</div>
 				<div class="promo-item instrument">
 					<h3>Инструмент</h3>
 					<a href="">На все случаи</a>
-					<img src="img/svg/icon-2.svg" alt="Шуруповерт">
 				</div>
 				<div class="promo-item technics">
 					<h3>Техника</h3>
 					<a href="">Для стройки</a>
-					<img src="img/svg/icon-3.svg" alt="Трактор">
 				</div>
 				<div class="promo-item discount">
 					<h3>Скидки 50%</h3>
 					<a href="">На 350 товаров</a>
-					<img src="img/svg/icon-4.svg" alt="Корзина">
 				</div>
 				<div class="promo-item delivery">
 					<h3>Доставка</h3>
 					<a href="">Бесплатно</a>
-					<img src="img/svg/icon-5.svg" alt="Машина">
 				</div>
 				
 				<div class="promo-slider">
@@ -172,9 +172,9 @@
 				<div class="about-us-contact">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<button type="button" class="modal-map">
+					<a href="" class="modal-map">
 						<img src="img/map.jpg" alt="Карта">
-					</button>
+					</a>
 					<div class="modal-map">
 						<button type="button">Закрыть карту</button>
 					</div>
@@ -186,7 +186,7 @@
 							<label>Текст письма:						
 								<textarea required name="description">В свободной форме</textarea>
 							</label>
-							<input type="submit">
+							<input type="submit" value="Отправить">
 						</form>
 					</div>
 				</div>
