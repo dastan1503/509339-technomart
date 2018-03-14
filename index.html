@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 	<link href="css/index.css" type="text/css" rel="stylesheet">
   </head>
   <body>
@@ -120,8 +121,10 @@
 			</section>
 		
 			<section class="pop-fabricator">
-				<h2>Популярные производители:</h2>
-				<a href="">Все производители</a>
+				<div class="caption">
+					<h2>Популярные производители:</h2>
+					<a href="">Все производители</a>
+				</div>
 				<ul>
 					<li><a href=""><img src="img/bosch.png" alt="Bosch"></a></li>
 					<li><a href=""><img src="img/Makita.png" alt="Makita"></a></li>
@@ -212,17 +215,20 @@
 				</ul>
 			</div>
 			<div class="copyright">
-				<p>&copy; 2010-2017 Компания "Техномарт"<br>Все права защищены</p>
+				<div class="author">
+					<p> &copy; 2010-2017 Компания "Техномарт"<br>Все права защищены</p>
+				</div>
 				<div class="social">
 					<a href="https://vk.com/htmlacademy" target="blanc">Вконтакте</a>
 					<a href="https://www.facebook.com/htmlacademy/" target="blanc">Facebook</a>
 					<a href="https://www.instagram.com/htmlacademy/" target="blanc">Instagram</a>
 				</div>
-				<p>Обратная связь:</p>
-				<a class="footer-link" href="">mail@htmlacademy.ru</a>
-				<p>Разработано -</p>
-				<a class="footer-link" href="">htmlacademy.ru</a>
-			</div>
+				<div class="feedback">
+					<p>Обратная связь:</p>
+					<a href="" class="footer-link">mail@htmlacademy.ru</a>
+					<p>Разработано -</p>
+					<a href="" class="footer-link">htmlacademy.ru</a>
+				</div>
 		</footer>
     </body>
 </html>
