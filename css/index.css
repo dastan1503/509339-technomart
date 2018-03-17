@@ -2,9 +2,11 @@
 body{
 		margin:0;
 		padding:0;
-		font-family:"PT Sans", Arial, sans-serif;
+		font-family:"Cuprum", Arial, sans-serif;
 		color:black;
-		background-color:#ffffff;	
+		background-color:#ffffff;
+		display:flex;
+		flex-direction:column;
 	}
 a{
 		text-decoration:none;
@@ -13,21 +15,37 @@ a{
 ul{
 	list-style:none;
 	margin:0;
+	font-size:17px;
+	display:flex;
+	flex-direction:row;
 }
 /*Header*/
+header{
+	background-color:#f4f7f9;
+	display:flex;
+	flex-direction:column;
+}
+	
 .logo{
 	background-color:#ee3643;
 	text-transform:uppercase;
+	font-size:24px;
+}
+h1{
+	font-size:16px;
+	line-height:23px;
 }
 .contacts p{
 	color:#32425c;
+	font-size:14px;
 }
 h1, .contacts .phone{
 	color:#ee3643;
 }
-header{
-	background-color:#f4f7f9;
+.contacts .phone{
+	font-size:21px;
 }
+
 header.inner{
 	background-color:#f2f6f8;
 }
@@ -41,6 +59,15 @@ header>ul{
 .inner .basket {
 	background-color:#ee3643;
 }
+.profile a{
+	color:#000000;
+	font-size:21px;
+}
+header ul li::first-child:before{
+	content:"";
+	background:url(img/svg/icon-search.svg) no-repeat;
+}
+
 /*Footer*/
 footer{
 	background-color:#32425c;
@@ -91,4 +118,5 @@ footer{
 	background-color:#ffc047;
 }
 /*products*/
+
 
