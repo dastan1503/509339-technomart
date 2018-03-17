@@ -1,110 +1,94 @@
+/*Общая стилизация*/
 body{
-	margin:0;
-	padding:0;
-	font-family:"PT Sans", Arial, sans-serif;
-	color:black;
-	background-color:#ffffff;	
-}
-
+		margin:0;
+		padding:0;
+		font-family:"PT Sans", Arial, sans-serif;
+		color:black;
+		background-color:#ffffff;	
+	}
 a{
-	text-decoration:none;
-	color:#ffffff;
+		text-decoration:none;
+		color:#ffffff;
+	}
+ul{
+	list-style:none;
+	margin:0;
 }
-
-.contacts p{
-	color:#32425c;
-}
-
-h1, .contacts .phone{
-	color:#ee3643;
-}
-
-header{
-	background-color:#f4f7f9;
-}
-
-header.inner{
-	background-color:#f2f6f8;
-}
-
-header>ul{
-	background-color:#293449;
-	color:#ffffff;
-}
-
-.main-nav{
-	background-color:#32425c;
-	color:#ffffff;
-}
-
+/*Header*/
 .logo{
 	background-color:#ee3643;
 	text-transform:uppercase;
 }
-
+.contacts p{
+	color:#32425c;
+}
+h1, .contacts .phone{
+	color:#ee3643;
+}
+header{
+	background-color:#f4f7f9;
+}
+header.inner{
+	background-color:#f2f6f8;
+}
+header>ul{
+	background-color:#293449;
+	color:#ffffff;
+}
 .order{
 	background-color:#63a63e;
 }
-
-.promo a{
-	text-transform:uppercase;
-}
-
-.matherials{
-	background-color:#ffbf47;
-}
-
-.instrument{
-	background-color:#3bbce3;
-}
-
-.technics{
-	background-color:#dc91d8;
-}
-	
-.discount{
-	background-color:#8ed78f;
-}	
-
-.delivery{
-	background-color:#ffc047;
-}
-
-.caption{
-	background-color:#f9f5f0;
-	color:#32425c;
-}
-
-.inner .caption{
-	background-color:#f2f6f8;
-}
-
-.caption a{
+.inner .basket {
 	background-color:#ee3643;
-	text-transform:uppercase;
 }
-
+/*Footer*/
 footer{
 	background-color:#32425c;
 	color:#ffffff;
 }
-
 .copyright{
 	background-color:#293449;
 }
-
-.inner .basket {
-	background-color:#ee3643;
-}
-
 .footer-nav-categories a{
 	color:#f1c77e;
 }
-
 .feedback a{
 	color:#ffd180;
 }
-
-ul{
-	list-style:none;
+/*Main*/
+.main-nav{
+	background-color:#32425c;
+	color:#ffffff;
 }
+.caption{
+	background-color:#f9f5f0;
+	color:#32425c;
+}
+.inner .caption{
+	background-color:#f2f6f8;
+}
+.caption a{
+	background-color:#ee3643;
+	text-transform:uppercase;
+}
+/*promo*/
+.promo a{
+	text-transform:uppercase;
+}
+.matherials{
+	background-color:#ffbf47;
+}
+.instrument{
+	background-color:#3bbce3;
+}
+.technics{
+	background-color:#dc91d8;
+}
+.discount{
+	background-color:#8ed78f;
+}	
+.delivery{
+	background-color:#ffc047;
+}
+/*products*/
+

@@ -8,8 +8,10 @@
   </head>
   <body>
 		<header class="inner">
+			<div class="logo">
+				<a href="index.html">Техномарт</a>
+			</div>
 			<ul>
-				<li><a href="index.html" class="logo">Техномарт</a></li>
 				<li>
 					<form method="post" action="https://echo.htmlacademy.ru/">
 						<input type="search" name="search">
@@ -61,21 +63,31 @@
 			<section class="filters">
 				<h3>Фильтр:</h3>
 				<form method="post" name="filter" action="https://echo.htmlacademy.ru/">
-					<h4>Цена:</h4>
-						<input name="min-cost" type="number" value="0">-
-						<input name="max-cost" type="number" value="30000">
-					
-					<h4>Производители:</h4>
-					<label><input type="checkbox" name="generator" value="BOSCH" checked>BOSCH</label>
-					<label><input type="checkbox" name="generator" value="Интерскол">Интерскол</label>
-					<label><input type="checkbox" name="generator" value="Makita" checked>Makita</label>
-					<label><input type="checkbox" name="generator" value="DeWALT">DeWALT</label>
-					<label><input type="checkbox" name="generator" value="Hitachi">Hitachi</label>
-					
-					<h4>Питание:</h4>
-					<label><input type="radio" name="power" value="power-out" checked>Аккумуляторные</label>
-					<label><input type="radio" name="power" value="power-in">Сетевые</label>
-					
+					<fieldset>
+						<legend>Цена:</legend>
+							<input name="min-cost" type="number" value="0">-
+							<input name="max-cost" type="number" value="30000">
+					</fieldset>
+					<fieldset>
+						<legend>Производители:</legend>
+						<input type="checkbox" name="generator" id="bosch" value="BOSCH" checked>
+							<label for="bosch">BOSCH</label>
+						<input type="checkbox" name="generator" id="inter" value="Интерскол">
+							<label for="inter">Интерскол</label>
+						<input type="checkbox" name="generator" id="makita" value="Makita" checked>
+							<label for="makita">Makita</label>
+						<input type="checkbox" name="generator" id="dewalt" value="DeWALT">
+							<label for="dewalt">DeWALT</label>
+						<input type="checkbox" name="generator" id="hitachi" value="Hitachi">
+							<label for="hitachi">Hitachi</label>
+					</fieldset>
+					<fieldset>
+						<legend>Питание:</legend>
+						<input type="radio" name="power" id="power-out" value="power-out" checked>
+							<label for="power-out">Аккумуляторные</label>
+						<input type="radio" name="power" id="power-in" value="power-in">
+							<label for="power-in">Сетевые</label>
+					</fieldset>
 					<button type="submit">Показать</button>
 				</form>
 			</section>
@@ -91,54 +103,90 @@
 				</div>
 				
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="old-price">22500 P.</p>
 					<p class="actual-price">15500 Р.</p>
 				</article>
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-3.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="old-price">30500 P.</p>
 					<p class="actual-price">55500 Р.</p>
 				</article>
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 2000">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<p class="old-price"></p>
 					<p class="actual-price">12500 Р.</p>
 				</article>
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="old-price">22500 P.</p>
 					<p class="actual-price">15500 Р.</p>
 				</article>
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-3.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="old-price">30500 P.</p>
 					<p class="actual-price">55500 Р.</p>
 				</article>
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 2000">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<p class="old-price"></p>
 					<p class="actual-price">12500 Р.</p>
 				</article>
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<p class="old-price">22500 P.</p>
 					<p class="actual-price">15500 Р.</p>
 				</article>
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-3.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
 					<p class="old-price">30500 P.</p>
 					<p class="actual-price">55500 Р.</p>
 				</article>
 				<article class="products-item">
+					<div class="action">
+						<button class="sale">Купить</button>
+						<button class="to-bookmarks">В закладки</button>
+					</div>
 					<img src="img/perfor-2-4.jpg" alt="Перфоратор BOSCH BFG 2000">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
 					<p class="old-price"></p>
@@ -160,8 +208,10 @@
 		</main>
 			
 		<footer>
+			<div class="logo">
+				<a href="index.html">Техномарт</a>
+			</div>
 			<ul class="footer-nav-site">
-				<li><a href="index.html" class="logo">Техномарт</a></li>
 				<li><a href="">Компания</a></li>
 				<li><a href="">Новости</a></li>
 				<li><a href="">Каталог</a></li>
