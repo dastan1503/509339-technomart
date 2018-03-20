@@ -7,6 +7,7 @@ body{
 		background-color:#ffffff;
 		display:flex;
 		flex-direction:column;
+		width:1200px;
 	}
 a{
 		text-decoration:none;
@@ -24,28 +25,60 @@ header{
 	background-color:#f4f7f9;
 	display:flex;
 	flex-direction:column;
+}	
+h1, .contacts .phone{
+	color:#ee3643;
 }
-	
+h1{
+	font-style:italic;
+	font-size:16px;
+	line-height:23px;
+}
 .logo{
 	background-color:#ee3643;
 	text-transform:uppercase;
 	font-size:24px;
+	border-bottom:5px solid #b52933;
 }
-h1{
-	font-size:16px;
-	line-height:23px;
+.logo:hover{
+	background-color:#ca2c37;
+	border-bottom:5px solid #9a212a;
+}
+.logo:active{
+	background-color:#BA2732;
+	border-bottom:5px solid #8e1e26;
+}
+
+header input[type="search"]{
+	border:none;
+	background:transparent;
+	color:white;
+}
+header input[type="submit"]{
+	background:url("../img/svg/icon-search.svg") no-repeat;
+	border:none;
+	opacity:0.5;
+}
+
+.bookmarks::before{
+	content:url("../img/svg/icon-bookmark.svg");
+}
+.basket::before{
+	content:url("../img/svg/icon-cart.svg");
+}
+.phone::before{
+	content:url("../img/svg/icon-phone.svg");
+}
+.sign-in::before{
+	content:url("../img/svg/icon-login.svg");
 }
 .contacts p{
 	color:#32425c;
 	font-size:14px;
 }
-h1, .contacts .phone{
-	color:#ee3643;
-}
 .contacts .phone{
 	font-size:21px;
 }
-
 header.inner{
 	background-color:#f2f6f8;
 }
@@ -63,11 +96,6 @@ header>ul{
 	color:#000000;
 	font-size:21px;
 }
-header ul li::first-child:before{
-	content:"";
-	background:url(img/svg/icon-search.svg) no-repeat;
-}
-
 /*Footer*/
 footer{
 	background-color:#32425c;
@@ -105,18 +133,52 @@ footer{
 .matherials{
 	background-color:#ffbf47;
 }
+.matherials::after{
+	content:url("../img/svg/icon-1.svg")
+}
 .instrument{
 	background-color:#3bbce3;
+}
+.instrument::after{
+	content:url("../img/svg/icon-2.svg");
 }
 .technics{
 	background-color:#dc91d8;
 }
+.technics::after{
+	content:url("../img/svg/icon-3.svg");
+}
 .discount{
 	background-color:#8ed78f;
 }	
+.discount::after{
+	content:url("../img/svg/icon-4.svg");
+}
 .delivery{
 	background-color:#ffc047;
 }
+.delivery::after{
+	content:url("../img/svg/icon-5.svg");
+}
+.promo-slider a{
+	background-color:#ee3643;
+	}
+.slide-1{
+	background:url("../img/slider-1.jpg");
+}
+.slide-2{
+	background:url("../img/slider-2.jpg");
+}
 /*products*/
-
+/*pop-fabricator*/
+.pop-fabricator ul{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.pop-fabricator li{
+	border: 1px solid #e5e5e5;
+	align-self:center;	
+	margin-top:20px;
+}
 
