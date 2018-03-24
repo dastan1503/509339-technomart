@@ -5,8 +5,8 @@ body{
 		font-family:"Cuprum", Arial, sans-serif;
 		color:black;
 		background-color:#ffffff;
-		display:flex;
-		flex-direction:column;
+		display: flex;
+		flex-direction: column;
 		min-width:960px;
 	}
 a{
@@ -18,7 +18,7 @@ ul{
 	margin:0;
 	padding:0;
 	font-size:17px;
-	display:flex;
+	display: flex;
 	flex-direction:row;
 }
 /*Header*/
@@ -83,10 +83,10 @@ h1{
 	background-color:#ee3643;
 	text-transform:uppercase;
 	font-size:24px;
-	border-bottom:5px solid #b52933;
+	/*border-bottom:5px solid #b52933;*/
 	width:220px;
 	text-align:center;
-	height:42px;
+	min-height:42px;
 }
 .logo:hover{
 	background-color:#ca2c37;
@@ -165,6 +165,7 @@ header>ul{
 /*Footer*/
 footer{
 	width:100%;
+	min-height:300px;
 	color:#ffffff;
 	display:flex;
 	flex-direction:column;
@@ -275,11 +276,12 @@ main{
 	margin: 0 auto;
 	display:flex;
 	justify-content:space-around;
+	min-height:1222px;
 }
 .caption{
 	background-color:#f9f5f0;
 	min-height:89px;
-	margin:0 auto;
+	margin:21px auto;
 	width:940px;
 	display:flex;
 	justify-content:space-between;
@@ -293,6 +295,7 @@ main{
 }
 .inner .caption{
 	background-color:#f2f6f8;
+	margin:0 auto;
 }
 .caption a{
 	background-color:#ee3643;
@@ -305,6 +308,7 @@ main{
 .breadcrumbs{
 	width:940px;
 	margin:0 auto;
+	min-height:59px;
 }
 .breadcrumbs a{
 	font-family: "PT sans";
@@ -315,6 +319,7 @@ main{
 .specification-wrapper{
 	width:100%;
 	background-color:#f2f6f8;
+	min-height:261px;
 }
 .specification{
 	width:940px;
@@ -331,6 +336,9 @@ main{
 	line-height:24px;
 }
 /*catalog-form/filters*/
+.filters{
+	width:220px;
+}
 .filters legend{
 	font-size:17px;
 	font-weight:bold;
@@ -353,6 +361,7 @@ main{
 .promo{
 	align-self:center;
 	width:940px;
+	min-height:500px;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-between;
@@ -440,6 +449,8 @@ main{
 	font-size:17px;
 	color:#000000;
 	border:1px solid #e5e5e5;
+	min-height:316px;
+	width:218px;
 }
 .products-item h3{
 	text-align:center;
@@ -460,11 +471,10 @@ main{
 	text-align:center;
 	line-height:38px;
 }
-.products-item img{
-	margin:10px 0;
+.products{
+	width:700px;
 }
 .action{
-	display:none;
 	text-transform:uppercase;
 }
 .action .sale{
@@ -510,13 +520,13 @@ main{
 	justify-content:space-between;
 	flex-wrap:wrap;
 }
-.products-item{
-	width:218px;
-}
+
+
 	/*services*/
 .services{
 	background-color:#f4f7f9;
 	width:100%;
+	min-height:522px;
 }
 .service-wrapper{
 	display:flex;
@@ -563,9 +573,15 @@ main{
 /*about-us*/
 .about-us{
 	width:940px;
+	min-height:536px;
 	margin: 0 auto;
 	display:flex;
 	justify-content:space-around;
+	align-items:center;
+}
+.about-us-description{
+	width:540px;
+	margin-right:100px;
 }
 .about-us h2{
 	font-size:30px;
@@ -595,6 +611,7 @@ main{
 /*pop-fabricator*/
 .pop-fabricator{
 	align-self:center;
+	margin-bottom:64px;
 }
 .pop-fabricator ul{
 	display:flex;
