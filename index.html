@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link href="css/normalize.css" type="text/css" rel="stylesheet">
 	<link href="css/index.css" type="text/css" rel="stylesheet">
   </head>
   <body>
@@ -71,7 +72,7 @@
 				<div class="promo-slider">
 					<div class="slide-1">
 						<h3>Дрели</h3>
-						<p>Соседям на радость</p>
+						<p>Соседям на радость!</p>
 					</div>
 					<div class="slide-2 hidden">
 						<h3>Перфораторы</h3>
@@ -83,14 +84,14 @@
 					<button type="button" class="next-slide">
 						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
 					</button>
-					<a href="catalog.html">Открыть каталог</a>
+					<a href="catalog.html" class="red-button">Открыть каталог</a>
 				</div>
 			</section>
 			
 			<section class="popular-item">
 				<div class="caption">
 					<h2>Популярные товары:</h2>
-					<a href="">Все популярные товары</a>
+					<a href="" class="red-button">Все популярные товары</a>
 				</div>
 				<div class="items">
 					<article class="products-item">
@@ -139,7 +140,7 @@
 			<section class="pop-fabricator">
 				<div class="caption">
 					<h2>Популярные производители:</h2>
-					<a href="">Все производители</a>
+					<a href="" class="red-button">Все производители</a>
 				</div>
 				<ul>
 					<li><a href=""><img src="img/bosch.png" alt="Bosch"></a></li>
@@ -157,23 +158,25 @@
 				<div class="service-wrapper">
 					<h2>Сервисы</h2>
 					<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-					<ul>
-						<li class="active">Доставка</li>
-						<li>Гарантия</li>
-						<li>Кредит</li>
-					</ul>
-					<div class="service-delivery active">
-						<h3>Доставка</h3>
-						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо работаем, поднимая на ваш этаж!</p>
-					</div>
-					<div class="service-guarantee hidden">
-						<h3>Гарантия</h3>
-						<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-					</div>
-					<div class="service-credit hidden">
-						<h3>Кредит</h3>
-						<p>Залезть в долговую яму стало проще! Кредитные консультанты придут к вам на помощь.</p>
-						<a href="">Отправить заявку</a>
+					<div class="service-wrapper-2">
+						<ul>
+							<li class="active">Доставка</li>
+							<li>Гарантия</li>
+							<li>Кредит</li>
+						</ul>
+						<div class="service-delivery active">
+							<h3>Доставка</h3>
+							<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо работаем, поднимая на ваш этаж!</p>
+						</div>
+						<div class="service-guarantee hidden">
+							<h3>Гарантия</h3>
+							<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+						</div>
+						<div class="service-credit hidden">
+							<h3>Кредит</h3>
+							<p>Залезть в долговую яму стало проще! Кредитные консультанты придут к вам на помощь.</p>
+							<a href="">Отправить заявку</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -188,7 +191,7 @@
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<a href="">Подробнее о компании</a>
+					<a href="" class="red-button">Подробнее о компании</a>
 				</div>
 				<div class="about-us-contact">
 					<h2>Контакты</h2>
@@ -199,7 +202,7 @@
 					<div class="modal-map hidden">
 						<button type="button">Закрыть карту</button>
 					</div>
-					<button type="button" class="modal-write-us">Заблудились? Напишите нам</button>
+					<button type="button" class="modal-write-us red-button">Заблудились? Напишите нам</button>
 					<div class="modal-write-us hidden">
 						<form method="post" name="write-us" action="https://echo.htmlacademy.ru/">
 							<button type="button">Закрыть окно</button>
