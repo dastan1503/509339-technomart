@@ -196,6 +196,7 @@ header>ul{
 	width:150px;
 	margin-right:0;
 }
+
 /*Footer*/
 footer{
 	width:100%;
@@ -419,9 +420,7 @@ main{
 	padding-top:59px;
 	padding-bottom:33px;
 }
-.promo-last{
-	order:2;
-}
+
 .promo-item{
 	width:275px;
 	min-height:123px;
@@ -528,6 +527,7 @@ main{
 	border:1px solid #e5e5e5;
 	min-height:316px;
 	width:218px;
+	margin-bottom:20px;
 }
 .products-item h3{
 	text-align:center;
@@ -767,4 +767,13 @@ button.modal-write-us{
 }
 .red-button:active{
 	background-color:#ba2732;
+}
+.new{
+	position:relative;
+}
+.new::after{
+	position:absolute;
+	content:url("../img/new-line.png");
+	top:0;
+	right:0;
 }
