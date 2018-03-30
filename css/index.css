@@ -804,6 +804,9 @@ form div.cost div.range-cost{
 .products-item:hover img{
 	display:none;
 }
+.products-item:hover, .pop-fabricator li:hover{
+	box-shadow: 0 10px 25px 0 rgba(41,52,73,.5);
+}
 .products{
 	width:700px;
 	display:flex;
@@ -905,6 +908,13 @@ form div.cost div.range-cost{
 	display:flex;
 	flex-direction:column;
 	width:240px;
+	position:relative;
+}
+.services ul:before{
+	content:url("../img/service-shadow.png");
+	position:absolute;
+	right:0;
+	top:-43px;
 }
 .services ul li{
 	color:#ffffff;
