@@ -76,7 +76,7 @@ header section{
 	margin:0 auto;
 	display:flex;
 	flex-wrap:wrap;
-	justify-content:space-between;
+	justify-content:flex-start;
 	align-content:space-between;
 	padding-top:46px;
 	min-height:232px;
@@ -97,6 +97,7 @@ header section{
 	top:2px;
 	left:15px;
 }
+
 h1, .contacts .phone{
 	color:#ee3643;
 }
@@ -136,7 +137,8 @@ h1{
 	font-size:16px;
 	line-height:23px;
 	width:200px;
-	padding:0 49px;
+	padding-left:53px;
+	padding-right:71px;
 	font-weight:normal;
 	margin:0;
 }
@@ -145,9 +147,6 @@ h1{
 	font-size:14px;
 	text-align:center;
 	margin-top:8px;
-}
-.contacts{
-	margin-right:40px;
 }
 .bookmarks::before{
 	content:url("../img/svg/icon-bookmark.svg");
@@ -179,13 +178,19 @@ header>ul{
 .inner .basket {
 	background-color:#ee3643;
 }
+.profile{
+	display:flex;
+	align-items:flex-start;
+	width:300px;
+	
+}
 .profile a{
-	display:inline-block;
+	display:flex;
+	align-items:center;
 	color:#000000;
 	font-size:21px;
 	background-color:#ffffff;
 	min-height:45px;
-	line-height:45px;
 	text-align:center;
 }
 .profile a:hover{
@@ -194,19 +199,66 @@ header>ul{
 .profile a:active{
 	color:#b2b2b2;
 }
-.sign-in::before{
-	content:url("../img/svg/icon-login.svg");
-	padding-right:14px;
+.inner .profile{
+	flex-wrap:wrap;
+}
+.inner .user{
+	width:100%;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	background-color:#ffffff;
+	margin-bottom:2px;
+}
+.inner .user a.name{
+	margin-right:35px;
+}
+.inner .user .name svg{
+	padding-left:13px;
+	padding-right:13px;
+}
+.path-fill{
+	fill:#c5c5c5;
+}
+a:hover .path-fill{
+	fill:#000000;
+}
+a:active .path-fill{
+	fill:#c5c5c5;
 }
 .sign-in{
-	width:121px;
+	width:120px;
 	margin-right:10px;
+}
+.sign-in svg{
+	margin-left:14px;
+	margin-right:14px;
 }
 .sign-up{
 	width:150px;
-	margin-right:0;
+	display:flex;
+	justify-content:center;
 }
-
+a.profile-orders, a.profile-info{
+	color:#32425c;
+	background-color:transparent;
+	text-decoration:underline;
+	font-size:16px;
+	min-height:27px;
+}
+a.profile-orders{
+	margin-left:19px;
+	margin-right:12px;
+}
+a.profile-orders::after {
+	display:inline-block;
+    content:"";
+    width:4px;
+    height:5px;
+    background-color:#32425c;
+    border-radius:50%;
+	margin-left:15px;
+}
 /*Footer*/
 footer{
 	width:100%;
@@ -452,7 +504,45 @@ main{
 .products-sort h3{
 	font-weight:normal;
 	font-size:13px;
+	margin-right:140px;
 }
+.by-cost{
+	margin-right:70px;
+}
+.by-type{
+	margin-right:65px;
+}
+.by-func{
+	margin-right:45px;
+}
+.up-dir{
+	margin-right:21px;
+}
+.products-sort{
+	display:flex;
+	margin-bottom:20px;
+	justify-content:flex-start;
+	align-items:center;
+}
+.products-sort a.active, .products-sort a.active:hover{
+	color:#ee3643;
+	border:none;
+}
+.products-sort a{
+	color:#b2b2b2;
+	border-bottom: 1px dotted #ee3643;
+}
+.products-sort a:hover{
+	color:#000000;
+	border-bottom-style:solid;
+}
+.products-sort a.active svg path{
+	fill:#ee3643;
+}
+a.up-dir, a.down-dir, a.up-dir:hover, a.down-dir:hover{
+	border:none;
+}
+
 .filters form{
 	display:flex;
 	flex-direction:column;
@@ -496,6 +586,7 @@ form div.cost div.range-cost{
 .filters form div{
 	display:flex;
 	flex-direction:column;
+	justify-content:flex-start;
 	align-items:flex-start;
 }
 .generator input, .power input{
@@ -701,14 +792,33 @@ form div.cost div.range-cost{
 .products-item img{
 	padding-top:10px;
 }
+.products-item:hover .action{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	height:150px;
+	
+}
+.products-item:hover img{
+	display:none;
+}
 .products{
 	width:700px;
 	display:flex;
 	flex-direction:column;
-	justify-content:space-between;
+	justify-content:flex-start;
 }
 .action{
 	text-transform:uppercase;
+}
+.action button{
+	height:35px;
+	width:135px;
+	border-radius:2px;
+	text-transform:uppercase;
+	letter-spacing:-1px;
 }
 .action .sale{
 	font-size:14px;
@@ -716,6 +826,8 @@ form div.cost div.range-cost{
 	border:none;
 	border-bottom:3px solid #367315;
 	color:#ffffff;
+	margin-bottom:8px;
+	position:relative;
 }
 .action .sale:hover{
 	background-color:#5fbb2d;
@@ -727,6 +839,13 @@ form div.cost div.range-cost{
 .action .sale::before{
 	content:url("../img/svg/icon-cart.svg");
 	opacity:0.5;
+	margin-right:22px;
+	position:absolute;
+	top:11px;
+	left:12px;
+}
+.action .sale:hover::before{
+	opacity:1;
 }
 .action .to-bookmarks{
 	font-size:14px;
@@ -903,6 +1022,9 @@ form div.cost div.range-cost{
 	padding-bottom:35px;
 }
 /*paginator*/
+.paginator{
+	margin-top:32px;
+}
 .paginator .actual-page{
 	background-color:#ee3643;
 	border:none;
