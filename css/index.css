@@ -630,11 +630,38 @@ a.up-dir, a.down-dir, a.up-dir:hover, a.down-dir:hover{
 	min-height:207px;
 }
 .double-range{
-	width:220px;
-	height:80px;
+	position:relative;
+	width:180px;
+	height:41px;
 	background-color:#f7f3ec;
 	border-radius:2px;
 	margin-bottom:9px;
+	padding-top:39px;
+	padding-right:20px;
+	padding-left:20px;
+}
+.double-range .scale{
+	height:2px;
+	background-color:#d7dcde;
+}
+.double-range .bar{
+	width:80%;
+	height:2px;
+	background:#00ca74;
+}
+.double-range .toggle{
+	position: absolute;
+    top: 31px;
+    left: 0;
+  
+	width:4px;
+	height:4px;
+	padding:0;
+	border:8px solid #ffffff;
+	background-color:#ababab;
+	border-radius:50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor:pointer;
 }
 form div.cost div.range-cost{
 	width:100%;
@@ -642,6 +669,12 @@ form div.cost div.range-cost{
 	flex-direction:row;
 	justify-content:space-between;
 	align-items:center;
+}
+.toggle.min{
+	left:18px;
+}
+.toggle.max{
+	left:160px;
 }
 .range-cost input{
 	text-align:center;
@@ -657,7 +690,7 @@ form div.cost div.range-cost{
 .power{
 	min-height:200px;
 }
-.filters form div{
+.filters form>div{
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-start;
