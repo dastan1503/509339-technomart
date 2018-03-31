@@ -1093,6 +1093,9 @@ form div.cost div.range-cost{
 	flex-direction:column;
 	justify-content:flex-start;
 }
+.about-us-contact a.modal-map{
+	overflow:hidden;
+}
 .about-us-contact p{
 	width:185px;
 }
