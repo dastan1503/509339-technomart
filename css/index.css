@@ -398,7 +398,6 @@ footer ul{
 footer>p{
 	font-size:18px;
 }
-
 .author{
 	width:230px;
 }
@@ -837,7 +836,7 @@ form div.cost div.range-cost{
 	width:218px;
 	display:flex;
 	flex-direction:column;
-	justify-content:space-between;
+	justify-content:flex-start;
 	align-items:center;
 	margin-bottom:20px;
 }
@@ -845,8 +844,8 @@ form div.cost div.range-cost{
 	text-align:center;
 	font-size:18px;
 	line-height:20px;
-	margin:0 30px;
-	padding-top:20px;
+	margin:0;
+	padding-top:28px;
 }
 .products-item .old-price{
 	text-decoration:line-through;
@@ -854,6 +853,7 @@ form div.cost div.range-cost{
 	text-align:center;
 	height:10px;
 	margin:0;
+	padding-top:12px;
 }
 .products-item .actual-price{
 	display:block;
@@ -881,6 +881,9 @@ form div.cost div.range-cost{
 }
 .products-item:hover, .pop-fabricator li:hover{
 	box-shadow: 0 10px 25px 0 rgba(41,52,73,.5);
+}
+.products-item h3{
+	width:165px;
 }
 .products{
 	width:700px;
