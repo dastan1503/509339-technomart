@@ -1,14 +1,14 @@
 /*Общая стилизация*/
 body{
-		margin:0 auto;
-		padding:0;
-		font-family:"Cuprum", Arial, sans-serif;
-		color:black;
-		background-color:#ffffff;
-		display: flex;
-		flex-direction: column;
-		min-width:960px;
-	}
+	margin:0 auto;
+	padding:0;
+	font-family:"Cuprum", Arial, sans-serif;
+	color:black;
+	background-color:#ffffff;
+	display:flex;
+	flex-direction:column;
+	min-width:960px;
+}
 a{
 	text-decoration:none;
 	color:#ffffff;
@@ -18,7 +18,7 @@ ul{
 	margin:0;
 	padding:0;
 	font-size:17px;
-	display: flex;
+	display:flex;
 	flex-direction:row;
 }
 /*Header*/
@@ -52,7 +52,7 @@ header{
 }
 .logo{
 	background-color:#ee3643;
-	box-shadow: 0 5px 0 0 #b52933;
+	box-shadow:0 5px 0 0 #b52933;
 	width:220px;
 	text-transform:uppercase;
 }
@@ -63,12 +63,12 @@ header{
 }
 .logo:hover{
 	background-color:#ca2c37;
-	box-shadow: 0 5px 0 0 #9a212a;
+	box-shadow:0 5px 0 0 #9a212a;
 	text-decoration:none;
 }
 .logo:active{
 	background-color:#BA2732;
-	box-shadow: 0 5px 0 0 #8e1e26;
+	box-shadow:0 5px 0 0 #8e1e26;
 }
 header form{
 	display:flex;
@@ -153,7 +153,7 @@ a.order:hover{
 .order:active{
 	opacity:0.5;
 }
-.inner .basket {
+.inner .basket{
 	background-color:#ee3643;
 }
 header section{
@@ -287,7 +287,7 @@ a.profile-orders{
 	margin-left:18px;
 	margin-right:12px;
 }
-a.profile-orders::after {
+a.profile-orders::after{
 	display:inline-block;
     content:"";
     width:4px;
@@ -304,28 +304,28 @@ a.profile-orders::after {
 		width:940px;
 		margin-top:30px;
 	}
-	.main-nav ul{
+.main-nav ul{
 		height:100%;
 		display:flex;
-		padding: 0 20px;
+		padding:0 20px;
 	}
-	.main-nav ul li{
+.main-nav ul li{
 		display:flex;
 		flex-grow:1;
 		align-items:center;
 		justify-content:center;
 	}
-	.main-nav a{
+.main-nav a{
 		width:100%;
 		height:100%;
 		display:flex;
 		justify-content:center;
 		align-items:center;
 	}
-	.main-nav li:hover{
+.main-nav li:hover{
 		background-color:#293449;
 	}
-	.main-nav li:active{
+.main-nav li:active{
 		background-color:#1d2739;
 		opacity:0.5;
 	}
@@ -470,7 +470,7 @@ main{
 }
 .catalog-wrapper{
 	width:940px;
-	margin: 0 auto;
+	margin:0 auto;
 	display:flex;
 	justify-content:space-between;
 	min-height:1202px;
@@ -510,7 +510,7 @@ main{
 	flex-direction:column;
 	justify-content:flex-start;
 	height:100%;
-	margin: 0 auto;
+	margin:0 auto;
 }
 .specification h2{
 	font-size:30px;
@@ -521,7 +521,7 @@ main{
 .specification p{
 	font-size:13px;
 	line-height:24px;
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 	margin:0;
 }
 /*breadcrumbs*/
@@ -534,7 +534,7 @@ main{
 	align-items:center;
 }
 .breadcrumbs a{
-	font-family: "PT sans";
+	font-family:"PT sans", Arial, sans-serif;
 	color:#000000;
 	font-size:13px;
 	text-transform:uppercase;
@@ -566,14 +566,14 @@ main{
 	display:flex;
 	align-items:center;
 	height:38px;
-	background-color: #f7f3ec;
+	background-color:#f7f3ec;
 	border-radius:2px;
 	padding-left:18px;
 	margin:0;
 	font-size:13px;
 	font-weight:normal;
 	text-transform:uppercase;
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 	border:none;
 }
 .products-sort h3{
@@ -605,7 +605,7 @@ main{
 }
 .products-sort a{
 	color:#b2b2b2;
-	border-bottom: 1px dotted #ee3643;
+	border-bottom:1px dotted #ee3643;
 }
 .products-sort a:hover{
 	color:#000000;
@@ -650,9 +650,9 @@ a.up-dir, a.down-dir, a.up-dir:hover, a.down-dir:hover{
 	background:#00ca74;
 }
 .double-range .toggle{
-	position: absolute;
-    top: 31px;
-    left: 0;
+	position:absolute;
+    top:31px;
+    left:0;
   
 	width:4px;
 	height:4px;
@@ -660,7 +660,7 @@ a.up-dir, a.down-dir, a.up-dir:hover, a.down-dir:hover{
 	border:8px solid #ffffff;
 	background-color:#ababab;
 	border-radius:50%;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
+	box-shadow:0 2px 1px 0 #cfcfcf;
 	cursor:pointer;
 }
 form div.cost div.range-cost{
@@ -709,14 +709,14 @@ form div.cost div.range-cost{
 .filters div h3{
 	text-transform:uppercase;
 	font-size:17px;
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 }
-.generator input:checked+label::before {
+.generator input:checked+label::before{
 	display:inline-block;
 	content:url("../img/svg/checkbox-on.svg");
 	padding-right:8px;
 }
-.generator input+label::before {
+.generator input+label::before{
 	display:inline-block;
 	content:url("../img/svg/checkbox-off.svg");
 	padding-right:12px;
@@ -733,7 +733,7 @@ form div.cost div.range-cost{
 .filters label{
 	display:flex;
 	align-items:center;
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 	font-size:15px;
 	text-transform:uppercase;
 	margin-bottom:15px;
@@ -745,7 +745,7 @@ form div.cost div.range-cost{
 	text-align:center;
 	background:none;
 	border:1px solid #e5e5e5;
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 	font-size:14px;
 	text-transform:uppercase;
 }
@@ -860,7 +860,7 @@ form div.cost div.range-cost{
 }
 /*products*/
 .products-item{
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 	font-weight:bold;
 	font-size:17px;
 	color:#000000;
@@ -913,7 +913,7 @@ form div.cost div.range-cost{
 	display:none;
 }
 .products-item:hover, .pop-fabricator li:hover{
-	box-shadow: 0 10px 25px 0 rgba(41,52,73,.5);
+	box-shadow:0 10px 25px 0 rgba(41,52,73,.5);
 }
 .products-item h3{
 	width:165px;
@@ -999,7 +999,7 @@ form div.cost div.range-cost{
 	display:flex;
 	flex-direction:column;
 	width:940px;
-	margin: 0 auto;
+	margin:0 auto;
 }
 .service-wrapper-2{
 	margin-top:69px;
@@ -1037,7 +1037,7 @@ form div.cost div.range-cost{
 	line-height:59px;
 	min-height:59px;
 	padding-left:22px;
-	border-bottom: 1px solid #4e637c;
+	border-bottom:1px solid #4e637c;
 }
 .services div.active{
 	width:620px;
@@ -1068,14 +1068,14 @@ form div.cost div.range-cost{
 .services div p{
 	font-size:13px;
 	line-height:24px;
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 	letter-spacing:0.04px;
 }
 /*about-us*/
 .about-us{
 	width:940px;
 	min-height:535px;
-	margin: 0 auto;
+	margin:0 auto;
 	display:flex;
 	justify-content:space-around;
 	align-items:flex-start;
@@ -1115,7 +1115,7 @@ form div.cost div.range-cost{
 .about-us p{
 	font-size:13px;
 	line-height:24px;
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 	margin-top:25px;
 	margin-bottom:0;
 	font-weight:normal;
@@ -1178,7 +1178,7 @@ form div.cost div.range-cost{
 	justify-content:center;
 	color:#000000;
 	font-size:13px;
-	font-family:"PT Sans";
+	font-family:"PT Sans", Arial, sans-serif;
 	text-transform:uppercase;
 	width:100%;
 	height:36px;
@@ -1199,7 +1199,7 @@ form div.cost div.range-cost{
 	padding:0;
 }
 .pop-fabricator li{
-	border: 1px solid #e5e5e5;
+	border:1px solid #e5e5e5;
 	align-self:center;
 	width:218px;
 	height:143px;
