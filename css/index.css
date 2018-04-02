@@ -1385,7 +1385,7 @@ form[name="write-us"] label{
 	border-radius:2px;
 	padding-left:14px;
 }
-.modal-write-us *:placeholder{
+.modal-write-us *::placeholder{
 	color:#999999;
 }
 .modal-write-us input:hover, .modal-write-us textarea:hover{
