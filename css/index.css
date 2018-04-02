@@ -783,10 +783,9 @@ form div.cost div.range-cost{
 	margin-bottom:20px;
 }
 .promo-slider{
-	width:620px;
-	min-height:265px;
+	width:570px;
+	height:265px;
 	position:relative;
-	background-color:#8a7a6e;
 }
 .promo h3{
 	padding-top:20px;
@@ -852,6 +851,7 @@ form div.cost div.range-cost{
 	background-repeat:no-repeat;
 	width:100%;
 	height:100%;
+	background-color:#8a7a6e;
 	padding:0 25px;
 }
 .promo-slider button{
@@ -873,6 +873,7 @@ form div.cost div.range-cost{
 	background-repeat:no-repeat;
 	width:100%;
 	height:100%;
+	background-color:#8a7a6e;
 	padding:0 25px;
 }
 .promo-slider a{
