@@ -296,6 +296,7 @@ a.profile-orders{
 }
 a.profile-orders::after{
 	display:inline-block;
+	vertical-align:middle;
     content:"";
     width:4px;
     height:5px;
@@ -550,6 +551,7 @@ main{
 .breadcrumbs a::before{
 	content:url("../img/svg/icon-right-small.svg");
 	display:inline-block;
+	vertical-align:middle;
 	margin-right:15px;
 }
 .breadcrumbs a.home{
@@ -559,6 +561,7 @@ main{
 .breadcrumbs a.home::before{
 	content:url("../img/svg/icon-home.svg");
 	display:inline-block;
+	vertical-align:middle;
 }
 /*catalog-form/filters*/
 .filters{
@@ -719,21 +722,25 @@ form div.cost div.range-cost{
 }
 .generator input:checked+label::before{
 	display:inline-block;
+	vertical-align:middle;
 	content:url("../img/svg/checkbox-on.svg");
 	padding-right:8px;
 }
 .generator input+label::before{
 	display:inline-block;
+	vertical-align:middle;
 	content:url("../img/svg/checkbox-off.svg");
 	padding-right:12px;
 }
 .power input+label::before{
 	display:inline-block;
+	vertical-align:middle;
 	content:url("../img/svg/radio-off.svg");
 	padding-right:12px;
 }
 .power input:checked+label::before{
 	display:inline-block;
+	vertical-align:middle;
 	content:url("../img/svg/radio-on.svg");
 }
 .filters label{
@@ -1234,6 +1241,55 @@ button.write-us{
 	background-repeat:no-repeat;
 	box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
+.modal-cart{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	position:fixed;
+	width:620px;
+	left:calc(50% - 310px);
+	height:275px;
+	top:calc(50% - 140px);
+	border-top:7px solid #ff5257;
+	background-color:#ffffff;
+	box-shadow: 0 20px 40px rgba(41,52,73,.75);
+}
+.cart-wrapper{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#f1f1f1;
+	min-height:112px;
+}
+.modal-cart p{
+	display:flex;
+	align-items:center;
+	margin-top:68px;
+	margin-bottom:68px;
+	font-size:30px;
+}
+.modal-cart p:before{
+	display:inline-block;
+	vertical-align:middle;
+	content:url("../img/svg/cart-check-icon.svg");
+	width:66px;
+	height:66px;
+	margin-left:81px;
+	margin-right:32px;
+}
+.cart-wrapper a{
+	width:220px;
+	height:38px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:2px;
+}
+.white-button{
+	color:#000000;
+	background-color:#ffffff;
+	margin-left:20px;
+}
 .modal-write-us{
 	display:flex;
 	flex-direction:column;
@@ -1243,7 +1299,7 @@ button.write-us{
 	left:calc(50% - 310px);
 	width:620px;
 	height:430px;
-	border-top:5px solid #ff5257;
+	border-top:7px solid #ff5257;
 	background-color:#ffffff;
 	box-shadow: 0 20px 40px rgba(0,1,1,.75);
 }
