@@ -224,15 +224,17 @@
 					<button type="button">Закрыть карту</button>
 				</div>
 				<div class="modal-write-us">
-					<form method="post" name="write-us" action="https://echo.htmlacademy.ru/">
+					<form method="post" id="write-us" name="write-us" action="https://echo.htmlacademy.ru/">
 						<label>Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста" name="name" required></label>
 						<label>Ваш E-mail:<input type="email" placeholder="Для отправки ответа" name="e-mail" required></label>
 						<label>Текст письма:						
-							<textarea required name="description">В свободной форме</textarea>
+							<textarea required name="description" placeholder="В свободной форме"></textarea>
 						</label>
-						<input type="submit" value="Отправить">
 					</form>
-					<button type="button" class="close-button">Закрыть окно</button>
+					<div class="write-us-wrapper">
+						<button type="submit" class="red-button" form="write-us">Отправить</button>
+					</div>
+					<button type="button" class="close-button" title="Закрыть окно"></button>
 				</div>
 			</section>
 		</main>
