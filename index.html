@@ -218,21 +218,21 @@
 					<a href="" class="modal-map">
 						<img src="img/map.jpg" alt="Карта">
 					</a>
-					<div class="modal-map hidden">
-						<button type="button">Закрыть карту</button>
-					</div>
-					<button type="button" class="modal-write-us red-button">Заблудились? Напишите нам</button>
-					<div class="modal-write-us hidden">
-						<form method="post" name="write-us" action="https://echo.htmlacademy.ru/">
-							<button type="button">Закрыть окно</button>
-							<label>Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста" name="name" required></label>
-							<label>Ваш E-mail:<input type="email" placeholder="Для отправки ответа" name="e-mail" required></label>
-							<label>Текст письма:						
-								<textarea required name="description">В свободной форме</textarea>
-							</label>
-							<input type="submit" value="Отправить">
-						</form>
-					</div>
+					<button type="button" class="write-us red-button">Заблудились? Напишите нам</button>
+				</div>
+				<div class="modal-map hidden">
+					<button type="button">Закрыть карту</button>
+				</div>
+				<div class="modal-write-us">
+					<form method="post" name="write-us" action="https://echo.htmlacademy.ru/">
+						<label>Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста" name="name" required></label>
+						<label>Ваш E-mail:<input type="email" placeholder="Для отправки ответа" name="e-mail" required></label>
+						<label>Текст письма:						
+							<textarea required name="description">В свободной форме</textarea>
+						</label>
+						<input type="submit" value="Отправить">
+					</form>
+					<button type="button" class="close-button">Закрыть окно</button>
 				</div>
 			</section>
 		</main>
