@@ -61,7 +61,7 @@ header{
 	font-size:24px;
 	min-height:42px;
 }
-.logo:hover{
+.logo:hover, .logo:focus{
 	background-color:#ca2c37;
 	box-shadow:0 5px 0 0 #9a212a;
 	text-decoration:none;
@@ -107,7 +107,6 @@ header input[type="search"]:focus+label svg path{
 header input[type="search"]:focus+label, header input[type="search"]:focus{
 	background-color:#ffffff;
 	color:#000000;
-	
 }
 header input[type="search"]{
 	order:2;
@@ -135,10 +134,10 @@ header input[type="search"]{
 	padding-right:17px;
 	opacity:0.3;
 }
-header form:hover, a.basket:hover, a.bookmarks:hover{
+header form:hover, a.basket:hover, a.bookmarks:hover, header form:focus, a.basket:focus, a.bookmarks:focus{
 	background-color:#212a3a;
 }
-a.basket:hover::before, a.bookmarks:hover::before{
+a.basket:hover::before, a.bookmarks:hover::before, a.basket:focus::before, a.bookmarks:focus::before{
 	opacity:1;
 }
 a.basket:active, a.bookmarks:active{
@@ -148,7 +147,7 @@ a.basket:active, a.bookmarks:active{
 	background-color:#63a63e;
 	justify-content:center;
 }
-a.order:hover{
+a.order:hover, a.order:focus{
 	background-color:#5fbb2d;
 }
 .order:active{
@@ -227,7 +226,7 @@ h1{
 	min-height:45px;
 	text-align:center;
 }
-.profile a:hover{
+.profile a:hover, .profile a:focus{
 	color:#ee3643;
 }
 .profile a:active{
@@ -278,7 +277,7 @@ h1{
 	fill:#c5c5c5;
 }
 a:hover .path-fill{
-	fill:#000000;
+	fill:#32425c;
 }
 a:active .path-fill{
 	fill:#c5c5c5;
@@ -330,7 +329,7 @@ a.profile-orders::after{
 	justify-content:center;
 	align-items:center;
 }
-.main-nav li:hover{
+.main-nav li:hover, .main-nav li a:focus{
 	background-color:#293449;
 }
 .main-nav li:active{
@@ -437,7 +436,6 @@ footer>p{
 .social{
 	display:flex;
 	justify-content:flex-start;
-	font-size:0;
 	margin-left:160px;
 	margin-right:115px;
 }
@@ -459,11 +457,11 @@ footer>p{
 .social a:nth-child(3){
 	background-image:url("../img/svg/icon-insta.svg");
 }
-.social a:hover, .social a:active{
+.social a:hover,.social a:focus, .social a:active{
 	background-color:#ee3643;
 	opacity:1;
 }
-footer a:hover{
+footer a:hover, footer a:focus{
 	text-decoration:underline;
 }
 footer a:active{
@@ -608,7 +606,7 @@ main{
 	justify-content:flex-start;
 	align-items:center;
 }
-.products-sort a.active, .products-sort a.active:hover{
+.products-sort a.active, .products-sort a.active:hover, .products-sort a.active:focus{
 	color:#ee3643;
 	border:none;
 }
@@ -616,7 +614,7 @@ main{
 	color:#b2b2b2;
 	border-bottom:1px dotted #ee3643;
 }
-.products-sort a:hover{
+.products-sort a:hover, .products-sort a:focus{
 	color:#000000;
 	border-bottom-style:solid;
 }
@@ -662,7 +660,6 @@ a.up-dir, a.down-dir, a.up-dir:hover, a.down-dir:hover{
 	position:absolute;
     top:31px;
     left:0;
-  
 	width:4px;
 	height:4px;
 	padding:0;
@@ -706,7 +703,12 @@ form div.cost div.range-cost{
 	align-items:flex-start;
 }
 .generator input, .power input{
-	display:none;
+	opacity:0;
+	width:0;
+	height:0;
+}
+.generator input:focus+label, .power input:focus+label{
+	border:1px dotted #000000; 	
 }
 .generator, .power{
 	border-top:1px solid #e5e5e5;
@@ -804,8 +806,11 @@ form div.cost div.range-cost{
 	min-height:38px;
 	line-height:38px;	
 }
-.promo-item a:hover{
+.promo-item a:hover, .promo-item a:focus{
 	background-color:rgba(0, 0, 0, 0.2);
+}
+.promo-item a:active{
+	background-color:rgba(0, 0, 0, 0.3);
 }
 .promo-item h3{
 	padding-bottom:16px;
@@ -925,12 +930,11 @@ form div.cost div.range-cost{
 	justify-content:center;
 	width:100%;
 	height:150px;
-	
 }
 .products-item:hover img{
 	display:none;
 }
-.products-item:hover, .pop-fabricator li:hover{
+.products-item:hover, .pop-fabricator li:hover, .pop-fabricator li a:focus{
 	box-shadow:0 10px 25px 0 rgba(41,52,73,.5);
 }
 .products-item h3{
@@ -1087,7 +1091,7 @@ form div.cost div.range-cost{
 	margin-top:0;
 	margin-bottom:20px;
 }
-.services ul li:hover{
+.services ul li:hover, .services ul li:focus{
 	background-color:#293449;
 }
 .services ul li.active{
@@ -1204,7 +1208,7 @@ button.write-us{
 	margin-right:10px;
 	min-width:36px;
 } 
-.paginator li:hover{
+.paginator li:hover, .paginator li:focus{
 	border-color:#bdc6ca;
 }
 .paginator li:active{
@@ -1242,6 +1246,9 @@ button.write-us{
 	width:218px;
 	height:143px;
 	margin-bottom:20px;
+}
+.pop-fabricator li:active{
+	opacity:0.3;
 }
 .pop-fabricator ul a{
 	display:flex;
@@ -1413,7 +1420,7 @@ button.close-button{
 	min-height:38px;
 	line-height:38px;
 }
-.red-button:hover{
+.red-button:hover, .red-button:focus{
 	background-color:#ca2c37;
 }
 .red-button:active{
