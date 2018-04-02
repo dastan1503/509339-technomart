@@ -80,6 +80,7 @@ header input, header form label{
 	height:100%;
 }
 header form label{
+	
 	padding-left:17px;
 	padding-right:15px;
 	display:flex;
@@ -113,7 +114,7 @@ header input[type="search"]{
 	border:none;
 	background:transparent;
 	color:#ffffff;
-	width:270px;
+	width:221px;
 }
 .bookmarks::before{
 	content:url("../img/svg/icon-bookmark.svg");
