@@ -306,16 +306,17 @@ a.profile-orders::after{
 	background-color:#32425c;
 	color:#ffffff;
 	border-bottom:5px solid #293449;
-	height:55px;
 	width:940px;
 	margin-top:29px;
 	}
 .main-nav ul{
-	height:100%;
+	min-height:55px;
 	display:flex;
+	flex-wrap:wrap;
 	padding:0 20px;
 }
 .main-nav ul li{
+	height:55px;
 	display:flex;
 	flex-grow:1;
 	align-items:center;
@@ -327,6 +328,8 @@ a.profile-orders::after{
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	padding-left:10px;
+	padding-right:10px;
 }
 .main-nav li:hover, .main-nav li a:focus{
 	background-color:#293449;
@@ -347,10 +350,14 @@ footer{
 }
 .footer-nav-site{
 	display:flex;
-	width:550px;
-	justify-content:space-between;
+	flex-wrap:wrap;
+	width:620px;
+	justify-content:flex-end;
 	align-items:flex-end;
 	margin-top:36px;
+}
+.footer-nav-site a{
+	margin-left:60px;
 }
 footer .logo{
 	font-size:30px;
@@ -391,9 +398,10 @@ footer .logo{
 }
 .footer-nav-categories{
 	display:flex;
-	justify-content:space-between;
+	justify-content:flex-end;
 	align-items:flex-start;
-	min-width:525px;
+	flex-wrap:wrap;
+	width:590px;
 	min-height:30px;
 }
 footer ul{
@@ -407,6 +415,7 @@ footer>p{
 }
 .footer-nav-categories a{
 	color:#f1c77e;
+	margin-left:60px;
 }
 .feedback{
 	display:flex;
