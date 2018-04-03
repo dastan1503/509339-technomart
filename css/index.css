@@ -80,7 +80,6 @@ header input, header form label{
 	height:100%;
 }
 header form label{
-	
 	padding-left:17px;
 	padding-right:15px;
 	display:flex;
@@ -181,7 +180,7 @@ h1{
 	font-weight:normal;
 	margin-top:3px;
 	margin-left:53px;
-	margin-right:71px;
+	margin-right:70px;
 }
 .phone{
 	display:flex;
@@ -304,12 +303,12 @@ a.profile-orders::after{
 	margin-left:15px;
 }
 .main-nav{
-		background-color:#32425c;
-		color:#ffffff;
-		border-bottom:5px solid #293449;
-		height:55px;
-		width:940px;
-		margin-top:30px;
+	background-color:#32425c;
+	color:#ffffff;
+	border-bottom:5px solid #293449;
+	height:55px;
+	width:940px;
+	margin-top:29px;
 	}
 .main-nav ul{
 	height:100%;
@@ -366,7 +365,6 @@ footer .logo{
 	align-items:center;
 	width:940px;
 	margin:0 auto;
-	
 }
 .footer-wrapper-1 p{
 	width:330px;
@@ -689,6 +687,8 @@ form div.cost div.range-cost{
 	width:95px;
 	background-color:#f7f3ec;
 	border-radius:2px;
+	font-family:"PT Sans", Arial, sans-serif;
+	font-size:17px;
 }
 .generator{
 	min-height:262px;
@@ -708,7 +708,7 @@ form div.cost div.range-cost{
 	left:-2000px;
 }
 .generator input:focus+label, .power input:focus+label{
-	border:1px dotted #000000; 	
+	outline:1px dotted #000000; 	
 }
 .generator, .power{
 	border-top:1px solid #e5e5e5;
@@ -751,7 +751,7 @@ form div.cost div.range-cost{
 	font-family:"PT Sans", Arial, sans-serif;
 	font-size:15px;
 	text-transform:uppercase;
-	margin-bottom:15px;
+	margin-bottom:14px;
 }
 .filters button{
 	width:138px;
@@ -777,7 +777,7 @@ form div.cost div.range-cost{
 	padding-bottom:33px;
 }
 .promo-item{
-	width:275px;
+	width:278px;
 	min-height:123px;
 	padding-left:22px;
 	margin-bottom:20px;
@@ -878,7 +878,7 @@ form div.cost div.range-cost{
 .promo-slider a{
 	position:absolute;
 	width:195px;
-	bottom:42px;
+	bottom:20px;
 	left:25px;
 }
 /*products*/
@@ -919,6 +919,8 @@ form div.cost div.range-cost{
 	background-position:50% 50%;
 	text-align:center;
 	line-height:38px;
+	margin-top:18px;
+	margin-left:6px;
 }
 .products-item img{
 	padding-top:10px;
@@ -1057,7 +1059,7 @@ form div.cost div.range-cost{
 	font-size:20px;
 	font-weight:bold;
 	line-height:59px;
-	min-height:59px;
+	min-height:60px;
 	padding-left:22px;
 	border-bottom:1px solid #4e637c;
 }
@@ -1068,7 +1070,7 @@ form div.cost div.range-cost{
 }
 .service-delivery{
 	background-image:url("../img/delivery.png");
-	background-position:100% 0;
+	background-position:100% 23px;
 	background-repeat:no-repeat;
 }
 .service-guarantee{
